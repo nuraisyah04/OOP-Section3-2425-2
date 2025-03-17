@@ -1,219 +1,136 @@
 
-# 🚀 GitHub Basic Operations Guide (For First-Time Users)
+# 📝 Instructions for Students - Folder Setup & Lab Submissions
 
-## 📌 Introduction
+## 📂 Step 1: Create Your Own Folder
 
-This guide will walk you through the essential steps to start using GitHub after registration, including setting up Git locally and performing basic operations.
+1. **Navigate to the `StudentFile/` directory** in your project's root.
+2. **Create a new folder** named with your **full name** or **student ID**.
 
----
+   **Example:**
+   ```
+   StudentFile/JohnDoe/
+   ```
+   or
+   ```
+   StudentFile/A22CS1234/
+   ```
 
-## 🛠 Step 1: Install Git on Your Computer
+   *Visual Example:*
 
-### For Windows:
-1. Go to [https://git-scm.com/download/win](https://git-scm.com/download/win)
-2. Download and run the installer.
-3. Follow the default installation settings.
+   ![Folder Structure Example](https://via.placeholder.com/600x300?text=Folder+Structure+Example)
 
-### For macOS:
-```bash
-brew install git
-```
-
-### For Linux:
-```bash
-sudo apt-get install git
-```
+3. This will serve as your personal workspace for the entire semester.
 
 ---
 
-## 🛠 Step 2: Configure Git (First-Time Setup)
+## 📄 Step 2: Set Up Your Profile in `README.md`
 
-Open **Terminal** or **Command Prompt** and run the following commands:
+1. Inside your personal folder (e.g., `StudentFile/JohnDoe/`), **create a file** named `README.md`.
+2. In the `README.md` file, include the following profile details:
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
-```
+   ```markdown
+   # Student Profile
 
-Verify the configuration:
+   - **Full Name:** John Doe
+   - **Student ID:** A22CS1234
+   - **Course:** Object-Oriented Programming (SECJ2154)
+   - **Email:** johndoe@example.com
+   - **GitHub Username:** johndoe123
 
-```bash
-git config --list
-```
+   ## About Me
+   > Write a short introduction about yourself and your learning goals.
+   ```
 
----
+   *Visual Example:*
 
-## 🛠 Step 3: Create a New Repository on GitHub
-
-1. Login to [GitHub](https://github.com)
-2. Click the **"+"** icon at the top-right corner and select **"New repository"**.
-3. Fill out:
-   - **Repository name** (e.g., `my-first-repo`)
-   - Optional: **Description**
-   - **Public** or **Private**
-   - ✅ (optional) **Initialize this repository with a README**
-4. Click **Create repository**.
+   ![README.md Example](https://via.placeholder.com/600x300?text=README.md+Example)
 
 ---
 
-## 🛠 Step 4: Clone the Repository to Your Local Machine
+## 💻 Step 3: Lab Exercises Submission
 
-1. In your GitHub repo page, click the **Code** button and copy the URL (HTTPS or SSH).
-2. In your terminal:
+1. For each lab exercise, **create a new subfolder** inside your personal folder.
 
-```bash
-git clone https://github.com/your-username/my-first-repo.git
-```
+   **Example for Lab 1:**
+   ```
+   StudentFile/JohnDoe/Lab1/
+   ```
 
-3. Navigate into the project folder:
+2. **Save all related files** (code, reports, etc.) inside the appropriate lab folder.
 
-```bash
-cd my-first-repo
-```
+   *Visual Example:*
 
----
+   ![Lab Folder Structure Example](https://via.placeholder.com/600x300?text=Lab+Folder+Structure+Example)
 
-## 🛠 Step 5: Add or Create Files Locally
-
-Create a simple file inside your project folder:
-
-```bash
-echo "# My First GitHub Project" > README.md
-```
-
-Or create/edit files using any text editor (e.g., VS Code, Notepad++).
+3. Maintain this structure for each subsequent lab:
+   ```
+   StudentFile/JohnDoe/Lab2/
+   StudentFile/JohnDoe/Lab3/
+   ...
+   ```
 
 ---
 
-## 🛠 Step 6: Stage and Commit Changes
+## 🔄 Step 4: Push Your Work to GitHub
 
-### Stage all new or changed files:
+After completing a lab, **push your work** to GitHub within your personal folder.
 
-```bash
-git add .
-```
-
-### Commit the changes with a message:
+### Workflow:
 
 ```bash
-git commit -m "Initial commit"
-```
+# Stage your changes
+git add StudentFile/YourFolderName/
 
----
+# Commit your changes
+git commit -m "Add Lab X files"
 
-## 🛠 Step 7: Push Changes to GitHub
-
-Push your changes to the **main** branch:
-
-```bash
+# Push your changes
 git push origin main
 ```
 
-_For older repositories, you may need to push to `master`:_
+*Replace `YourFolderName` with your actual folder name.*
 
-```bash
-git push origin master
+*Visual Example of Git Workflow:*
+
+![Git Workflow Example](https://via.placeholder.com/600x300?text=Git+Workflow+Example)
+
+---
+
+## 🚦 Important Notes:
+
+- **Do NOT modify** or submit work in another student's folder.
+- Ensure your folder and file names are **clear** and **organized**.
+- All lab submissions must reside **within your personal folder**.
+- Keep your `README.md` **updated** if there are any profile changes.
+
+---
+
+✅ **Good Practice:** Commit and push your work after every lab to avoid missing submissions.
+
+---
+
+## 🎯 Final Deliverable Structure Example:
+
+```
+StudentFile/
+└── JohnDoe/
+    ├── README.md
+    ├── Lab1/
+    │   ├── lab1_code.java
+    │   └── lab1_report.pdf
+    ├── Lab2/
+    │   ├── lab2_code.java
+    │   └── lab2_report.pdf
+    └── Lab3/
+        └── ...
 ```
 
----
+*Visual Example:*
 
-## 🛠 Step 8: Check Your Repository on GitHub
-
-1. Go to your repository page on [GitHub](https://github.com).
-2. Refresh the page to see your committed files and commit history.
+![Final Structure Example](https://via.placeholder.com/600x300?text=Final+Structure+Example)
 
 ---
 
-## 🛠 Step 9: Basic Workflow for Future Changes
+## 💡 Tip:
 
-For all future updates, repeat these steps:
-1. Make changes to your files.
-2. Stage the changes:
-   ```bash
-   git add .
-   ```
-3. Commit the changes:
-   ```bash
-   git commit -m "your commit message"
-   ```
-4. Push to GitHub:
-   ```bash
-   git push origin main
-   ```
-
----
-
-## 🛠 Step 10: Pull Latest Changes (Collaboration)
-
-If you are working with a team, always pull the latest changes before making new commits:
-
-```bash
-git pull origin main
-```
-
----
-
-## 🛠 Optional: Create and Use Branches
-
-### Create a new branch:
-
-```bash
-git checkout -b feature-branch
-```
-
-### Switch to an existing branch:
-
-```bash
-git checkout main
-```
-
-### Push the new branch to GitHub:
-
-```bash
-git push origin feature-branch
-```
-
----
-
-## 🛠 Optional: Open a Pull Request (PR)
-
-1. On GitHub, switch to your new branch.
-2. Click **"Compare & pull request"**.
-3. Add a title and description.
-4. Click **"Create pull request"**.
-5. After review, click **"Merge pull request"** to merge it into **main**.
-
----
-
-## ✅ You're Done! 🎉
-
-You now know how to:
-- Set up Git and GitHub
-- Clone repositories
-- Stage, commit, and push changes
-- Work with branches and pull requests
-
----
-
-## 🔄 Quick Commands Summary
-
-```bash
-git clone <repo-url>
-git add .
-git commit -m "your message"
-git push origin <branch-name>
-git pull origin <branch-name>
-git checkout -b <new-branch>
-```
-
----
-
-## 📚 Helpful Resources
-
-- [GitHub Docs](https://docs.github.com/en)
-- [Git Cheat Sheet PDF](https://education.github.com/git-cheat-sheet-education.pdf)
-- [GitHub Learning Lab](https://lab.github.com/)
-
----
-
-**Tip:** For GUI users, you can also install [GitHub Desktop](https://desktop.github.com/) to manage your repositories visually.
+Use **meaningful commit messages** such as `"Completed Lab 3 with all required files"`.
