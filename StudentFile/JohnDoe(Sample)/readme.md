@@ -1,4 +1,4 @@
-```markdown
+
 # Student Profile
 
 - **Full Name:** John Doe
@@ -10,4 +10,4 @@
 ## About Me
 I am a second-year Computer Science student at Universiti Teknologi Malaysia. 
 I enjoy learning about object-oriented programming, solving problems, and working on collaborative software projects.
-```
+
