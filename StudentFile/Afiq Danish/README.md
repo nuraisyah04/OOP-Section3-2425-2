@@ -7,4 +7,4 @@
 - **GitHub Username:** fiqdanish
 
 ## About Me
-> Write a short introduction about yourself and your learning goals.
+Greetings! I am Afiq, a second-year student of Data Engineering program in Universiti Teknologi Malaysia. I love to work with data specifically in data visualization and also coding. 
